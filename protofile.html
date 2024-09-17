@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        #profile-photo {
+            margin-right: 30px;
+            width: 250px; 
+            height: 300px; 
+            overflow: hidden; 
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        #profile-photo img {
+            width: 100%;
+            height: auto; 
+            object-fit: cover;
+        }
+
+        #about-section {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            display: none;
+        }
+
+        section:target {
+            display: block; 
+        }
+
+        #about-section h2 {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #profile-photo {
+                margin: 0 0 20px 0;
+                width: 200px; 
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Akhila Gandru</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="profile-photo">
+            <img src="a.jpg" alt="Akhila Profile Photo">
+        </div>
+
+        <div id="about-section">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I'm a student with a passion for learning new things. I enjoy learning new skills and working on projects that challenge me. I believe in continuous learning and improving myself through technology and innovation.</p>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <p><strong>B.TECH-III  </strong>Studying Information Technology at Vignan's University. I have a strong interest in software development, data analysis, and web technologies.</p>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Python Programming</li>
+                    <li>HTML & CSS Development</li>
+                    <li>C Programming</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>Email: <a href="mailto:akhila@gmail.com">akhila@gmail.com</a></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Akhila Gandru. All rights reserved.</p>
+    </footer>
+</body>
+</html>
